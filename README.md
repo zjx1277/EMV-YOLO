@@ -1,3 +1,5 @@
+
+
 # [BMVC 2024] Toward Highly Efficient Semantic-Guided Machine Vision for Low-Light Object Detection
 <p align="center">
 <a href="https://paperswithcode.com/sota/2d-object-detection-on-exdark"><img src="https://img.shields.io/badge/SOTA-Getting%20to%20Know%20Low%20light%20Images%20with%20The%20Exclusively%20Dark%20Dataset-brightgreen?logo=paperswithcode">
@@ -122,11 +124,11 @@ If you have multiple GPUs, you can opt for distributed training:
 
 Usage:
 ```bash
-bash tools/dist_train.sh <CONFIG> <GPU ID>
+bash tools/dist_train.sh <CONFIG> <NUM_GPUS>
 ```
 Example:
 ```bash
-bash tools/dist_train.sh configs/yolo/yolov3_EMV_Exdark.py 0,1,2,3
+bash tools/dist_train.sh configs/yolo/yolov3_EMV_Exdark.py 4
 ```
 
 ---
